@@ -68,7 +68,7 @@ export class TranslationService {
       catchError((err) => {
         console.error('Error during translation:', err);
         return of([]);
-      })
+      }),
     );
   }
   setNull() {
